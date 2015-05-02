@@ -49,7 +49,6 @@ end
 
 group :test do 
 	gem 'mini_backtrace'
-	gem 'guard-minitest'
 end
 
 ruby "2.2.1"
