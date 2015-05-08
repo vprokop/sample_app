@@ -5,7 +5,6 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.1'
 gem 'bcrypt', '3.1.7'
 gem 'bootstrap-sass', '3.2.0.0'
-gem 'rails_12factor', group: :production
 # Use sqlite3 as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
@@ -34,6 +33,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+group :production do
+	gem 'rails_12factor'
+	gem 'puma', '2.11.1'
+end
 
 group :development, :test do
 	gem 'test-unit'
